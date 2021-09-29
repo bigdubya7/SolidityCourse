@@ -1,0 +1,25 @@
+pragma solidity ^0.6.0;
+
+contract SimpleStorage {
+    uint256 public favoriteNumber;
+    //this will get initialized to 0
+    
+    function store(uint256 _favoriteNumber) public {
+        favoriteNumber = _favoriteNumber;
+    }
+    //view, pure
+    function retrieve() public view returns(uint256) {
+        return favoriteNumber;
+    }
+    
+    
+    
+    
+    /*
+    bool favoriteBool = true;
+    string favoriteString= "String";
+    int256 favoriteInt = -5;
+    address favoriteAddress = 0x254781CBA82CFCcfD2c0Fc4e24107B0C7C82ec50;
+    bytes32 favoriteBytes = "cat";
+    */
+}
